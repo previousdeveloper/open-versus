@@ -1,13 +1,13 @@
-package com.example
+package com.versus
 
-import com.twitter.finagle.http.{Response, Request}
+import com.twitter.finagle.http.{Request, Response}
 import com.twitter.finatra.http.HttpServer
 import com.twitter.finatra.http.filters.{CommonFilters, LoggingMDCFilter, TraceIdMDCFilter}
 import com.twitter.finatra.http.routing.HttpRouter
 
-object ExampleServerMain extends ExampleServer
+object MainServer extends VersusServer
 
-class ExampleServer extends HttpServer {
+class VersusServer extends HttpServer {
 
   override def defaultFinatraHttpPort = ":9999"
 

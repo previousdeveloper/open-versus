@@ -1,4 +1,4 @@
-package com.example.configuration
+package com.versus.configuration
 
 import org.scalatest.FunSuite
 

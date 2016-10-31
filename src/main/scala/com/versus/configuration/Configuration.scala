@@ -1,13 +1,9 @@
-package com.example.configuration
+package com.versus.configuration
 
 import com.typesafe.config.{Config, ConfigFactory}
+
 import scala.util.Properties
 
-
-trait TestConfiguration {
-
-  def ping: String
-}
 
 class Configuration extends TestConfiguration {
 

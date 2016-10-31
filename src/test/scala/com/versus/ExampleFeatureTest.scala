@@ -1,4 +1,4 @@
-package com.example
+package com.versus
 
 import com.twitter.finagle.http.Status.Ok
 import com.twitter.finatra.http.test.EmbeddedHttpServer
@@ -6,7 +6,7 @@ import com.twitter.inject.server.FeatureTest
 
 class ExampleFeatureTest extends FeatureTest {
 
-  override val server = new EmbeddedHttpServer(new ExampleServer)
+  override val server = new EmbeddedHttpServer(new VersusServer)
 
   "Server" should {
     "ping" in {

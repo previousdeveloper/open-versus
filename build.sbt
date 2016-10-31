@@ -26,6 +26,8 @@ lazy val versions = new {
   val scalatest = "2.2.3"
   val specs2 = "2.3.12"
   val config = "1.3.1"
+  val akka = "2.4.11"
+
 }
 
 libraryDependencies ++= Seq(
@@ -33,6 +35,10 @@ libraryDependencies ++= Seq(
   "com.twitter.finatra" %% "finatra-slf4j" % versions.finatra,
   "ch.qos.logback" % "logback-classic" % versions.logback,
   "com.typesafe" % "config" % versions.config,
+
+  "com.typesafe.akka" %% "akka-actor" % versions.akka,
+  "com.typesafe.akka" %% "akka-slf4j" % versions.akka,
+
   "ch.qos.logback" % "logback-classic" % versions.logback % "test",
 
   "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test",
@@ -47,6 +53,9 @@ libraryDependencies ++= Seq(
   "com.twitter.inject" %% "inject-app" % versions.finatra % "test" classifier "tests",
   "com.twitter.inject" %% "inject-core" % versions.finatra % "test" classifier "tests",
   "com.twitter.inject" %% "inject-modules" % versions.finatra % "test" classifier "tests",
+
+  "com.typesafe.akka" %% "akka-testkit" % versions.akka,
+
 
   "org.mockito" % "mockito-core" % versions.mockito % "test",
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",

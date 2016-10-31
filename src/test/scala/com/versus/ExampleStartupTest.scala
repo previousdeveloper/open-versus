@@ -1,4 +1,4 @@
-package com.example
+package com.versus
 
 import com.google.inject.Stage
 import com.twitter.finatra.http.test.EmbeddedHttpServer
@@ -8,7 +8,7 @@ class ExampleStartupTest extends Test {
 
   val server = new EmbeddedHttpServer(
     stage = Stage.PRODUCTION,
-    twitterServer = new ExampleServer)
+    twitterServer = new VersusServer)
 
   "server" in {
     server.assertHealthy()
