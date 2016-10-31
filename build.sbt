@@ -1,9 +1,10 @@
-name := "activator-seed"
-organization := "com.example"
+
+name := "Open-Versus"
+organization := "previousDev"
 
 version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 fork in run := true
 
@@ -14,6 +15,8 @@ javaOptions ++= Seq(
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   "Twitter Maven" at "https://maven.twttr.com")
+
+
 
 lazy val versions = new {
   val finatra = "2.1.4"
@@ -48,3 +51,4 @@ libraryDependencies ++= Seq(
   "org.mockito" % "mockito-core" % versions.mockito % "test",
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",
   "org.specs2" %% "specs2" % versions.specs2 % "test")
+
