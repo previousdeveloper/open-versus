@@ -13,5 +13,7 @@ class PingController extends Controller {
 
     pingActor ! "ping"
 
+    "pong"
+
   }
 }
