@@ -6,7 +6,7 @@ import org.scalatest.FunSuite
 class ConfigurationTest extends FunSuite {
 
   test("Configuration load correctly") {
-    val configuration = new Configuration
+    val configuration = new ConfigurationImpl
 
     assert(configuration.ping == "PongDev")
   }

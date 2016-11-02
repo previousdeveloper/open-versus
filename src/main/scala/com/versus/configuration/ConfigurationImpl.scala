@@ -5,11 +5,7 @@ import com.typesafe.config.{Config, ConfigFactory}
 import scala.util.Properties
 
 
-class Configuration extends TestConfiguration {
-
-  val env = Properties.propOrElse("env", "dev")
-
-  val config: Config = ConfigFactory.load().getConfig(env)
+class ConfigurationImpl extends TestConfiguration with Configuration {
 
   override def ping: String = {
 

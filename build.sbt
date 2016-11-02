@@ -27,6 +27,7 @@ lazy val versions = new {
   val specs2 = "2.3.12"
   val config = "1.3.1"
   val akka = "2.4.11"
+  val scalaLikeJdbc = "2.4.2"
 
 }
 
@@ -39,6 +40,9 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % versions.akka,
   "com.typesafe.akka" %% "akka-slf4j" % versions.akka,
 
+  "org.scalikejdbc" %% "scalikejdbc"       % "2.4.2",
+  "org.scalikejdbc" %% "scalikejdbc-config" % versions.scalaLikeJdbc,
+  "mysql" % "mysql-connector-java" % "6.0.5",
   "ch.qos.logback" % "logback-classic" % versions.logback % "test",
 
   "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test",
