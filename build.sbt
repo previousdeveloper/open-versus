@@ -63,5 +63,7 @@ libraryDependencies ++= Seq(
 
   "org.mockito" % "mockito-core" % versions.mockito % "test",
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",
+  "org.mockito" % "mockito-all" % "1.9.5" % "test",
+
   "org.specs2" %% "specs2" % versions.specs2 % "test")
 

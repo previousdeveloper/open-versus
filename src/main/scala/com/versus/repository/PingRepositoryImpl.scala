@@ -6,7 +6,7 @@ import scalikejdbc._
 
 class PingRepositoryImpl extends PingRepository {
 
-  override def addPing(): Boolean = {
+  override def ping(): Boolean = {
 
     DB autoCommit { implicit session =>
 
