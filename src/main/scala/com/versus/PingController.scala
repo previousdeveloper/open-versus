@@ -10,11 +10,6 @@ class PingController extends Controller {
 
   get("/ping") { request: Request =>
 
-    DB autoCommit { implicit session =>
-      val jobs =
-        sql"""insert into test (deneme) values (1)""".update().apply()
-
-    }
 
     val pingActor = ActorSystem("PingActor").actorOf(Props[PingJobActor])
 
