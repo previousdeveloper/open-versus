@@ -16,7 +16,8 @@ class PingController extends Controller {
 
     pingActor ! "ping"
 
-    val repo = new PingRepositoryImpl().ping()
+    println("pong")
+    
     "pong"
 
   }
