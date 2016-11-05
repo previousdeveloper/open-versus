@@ -10,11 +10,11 @@ object RepositoryModule extends TwitterModule with Configuration {
 
   DBsWithEnv(env).setupAll()
 
-  DB autoCommit { implicit session =>
-    sql"""CREATE TABLE ping (
-    name VARCHAR(30) NOT NULL,
-    )""".update().apply()
-
-  }
+//  DB autoCommit { implicit session =>
+//    sql"""CREATE TABLE ping (
+//    name VARCHAR(30) NOT NULL,
+//    )""".update().apply()
+//
+//  }
 
 }

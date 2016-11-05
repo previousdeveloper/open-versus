@@ -17,7 +17,7 @@ class PingController extends Controller {
     pingActor ! "ping"
 
     println("pong")
-    
+
     "pong"
 
   }
