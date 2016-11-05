@@ -4,7 +4,7 @@ import akka.actor.{ActorSystem, Props}
 import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.Controller
 import com.versus.actor.PingJobActor
-import scalikejdbc._
+import com.versus.repository.PingRepositoryImpl
 
 class PingController extends Controller {
 
@@ -13,8 +13,10 @@ class PingController extends Controller {
 
     val pingActor = ActorSystem("PingActor").actorOf(Props[PingJobActor])
 
+
     pingActor ! "ping"
 
+    val repo = new PingRepositoryImpl().ping()
     "pong"
 
   }

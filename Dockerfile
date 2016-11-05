@@ -13,6 +13,7 @@ RUN curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VE
         apt-get install sbt
 RUN git clone https://github.com/previousdeveloper/open-versus.git; exit 0
 RUN cd /open-versus && sbt compile && sbt packageBin
-EXPOSE 8880
-WORKDIR /open-versus
-ENTRYPOINT sbt run
+ADD . /code
+WORKDIR /code
+
+CMD sbt run
