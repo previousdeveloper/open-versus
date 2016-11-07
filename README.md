@@ -14,7 +14,7 @@ docker build -t "web"  .
 docker-compose up
 ```
 
-Mysql and web server is running on 9999 
+Mysql and web server is running !
     
     
   
