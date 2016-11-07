@@ -6,7 +6,9 @@ version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
+
 fork in run := true
+
 
 javaOptions ++= Seq(
   "-Dlog.service.output=/dev/stderr",
