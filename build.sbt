@@ -41,12 +41,14 @@ libraryDependencies ++= Seq(
 
   "com.typesafe.akka" %% "akka-actor" % versions.akka,
   "com.typesafe.akka" %% "akka-slf4j" % versions.akka,
+  "net.debasishg" %% "redisclient" % "3.2",
 
-  "org.scalikejdbc" %% "scalikejdbc"       % "2.4.2",
+
+  "org.scalikejdbc" %% "scalikejdbc" % "2.4.2",
   "org.scalikejdbc" %% "scalikejdbc-config" % versions.scalaLikeJdbc,
   "mysql" % "mysql-connector-java" % "6.0.5",
   "ch.qos.logback" % "logback-classic" % versions.logback % "test",
-
+  "com.wix" %% "accord-core" % "0.6",
   "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test",
   "com.twitter.inject" %% "inject-server" % versions.finatra % "test",
   "com.twitter.inject" %% "inject-app" % versions.finatra % "test",
