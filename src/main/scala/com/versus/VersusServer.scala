@@ -10,7 +10,7 @@ object MainServer extends VersusServer
 
 class VersusServer extends HttpServer {
 
-  override def defaultFinatraHttpPort = ":9998"
+  override def defaultFinatraHttpPort = ":9999"
 
   override def configureHttp(router: HttpRouter) {
     router

@@ -9,7 +9,7 @@
         links:
          - db
          - redis
-         depends_on:
+        depends_on:
          -  db
          -  redis
       db:
