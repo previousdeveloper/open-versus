@@ -23,5 +23,3 @@
          MYSQL_DATABASE: open-versus
       redis:
         image: redis
-        ports:
-          - "6379"
