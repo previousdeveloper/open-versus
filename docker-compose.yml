@@ -6,16 +6,9 @@
          - "9999:9999"
         volumes:
          - .:/code
-		networks
-		 - front-tier:
-		 - back-tier:
+        links:
+         - redis
+        depends_on:
+         - redis
       redis:
-        image: redis:alpine
-		container_name: redis
-		ports: ["6379"]
-		networks:
-		 - back-tier
-	
-	networks:
-	 front-tier:
-     back-tier:
+        image: redis
