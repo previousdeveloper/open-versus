@@ -4,7 +4,6 @@ import akka.actor.{ActorSystem, Props}
 import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.Controller
 import com.versus.actor.PingJobActor
-import com.versus.model.PingRequest
 import com.versus.service.RedisService
 
 class PingController extends Controller {
@@ -17,9 +16,6 @@ class PingController extends Controller {
 
     RedisService.set("testKey", "testValue")
 
-    //    val validatorResult: Result = validate(request)
-    //
-    //    println(validatorResult.isSuccess)
 
     pingActor ! "ping"
 

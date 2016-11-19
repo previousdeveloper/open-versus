@@ -5,7 +5,7 @@ import com.redis.RedisClient
 
 object RedisService {
 
-  val r = new RedisClient("localhost", 6379)
+  val r = new RedisClient("redis", 6379)
 
   def set(key: String, value: String) = {
     r.set(key, value)
