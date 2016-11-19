@@ -5,9 +5,9 @@ import com.redis.RedisClient
 
 object RedisService {
 
-  val r = new RedisClient("redis", 6379)
+  val r = new RedisClient("localhost", 6379)
 
-  def set(key: String, value: String) = {
+  def set(key: String, value: Any): Boolean = {
     r.set(key, value)
   }
 
@@ -17,4 +17,5 @@ object RedisService {
 
     result
   }
+
 }

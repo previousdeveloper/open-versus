@@ -1,10 +1,13 @@
 package com.versus.repository
 
-import com.versus.repository.`trait`.PingRepository
 import scalikejdbc._
 
+trait PingRepositoryComponent {
 
-class PingRepositoryImpl extends PingRepository {
+  def ping(): Boolean
+}
+
+class PingRepository extends PingRepositoryComponent {
 
   override def ping(): Boolean = {
 

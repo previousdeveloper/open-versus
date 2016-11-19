@@ -1,6 +1,6 @@
 package com.versus.service
 
-import com.versus.repository.`trait`.PingRepository
+import com.versus.repository.PingRepository
 
 
 class PingServiceImpl(pingRepository: PingRepository) extends PingService {

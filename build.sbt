@@ -55,7 +55,7 @@ libraryDependencies ++= Seq(
   "com.twitter.inject" %% "inject-core" % versions.finatra % "test",
   "com.twitter.inject" %% "inject-modules" % versions.finatra % "test",
   "com.google.inject.extensions" % "guice-testlib" % versions.guice % "test",
-
+  "org.scala-lang.modules" %% "scala-pickling" % "0.10.1",
   "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test" classifier "tests",
   "com.twitter.inject" %% "inject-server" % versions.finatra % "test" classifier "tests",
   "com.twitter.inject" %% "inject-app" % versions.finatra % "test" classifier "tests",

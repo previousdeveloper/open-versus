@@ -18,6 +18,7 @@ class VersusServer extends HttpServer {
       .filter[TraceIdMDCFilter[Request, Response]]
       .filter[CommonFilters]
       .add[PingController]
+      .add[DashboardController]
   }
 
   override val modules = Seq(
